@@ -42,5 +42,18 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      window.onload = function(){
+	document.getElementById('user_name').addEventListener("focusin", function() {
+	document.getElementById('user_name').style.backgroundColor = '#C7D5E0';
+	document.getElementById('user_name').style.color = '#ba6432';
+	document.getElementById('user_name').style.outlineColor = '#FF0CA9';
+})
+	document.getElementById('user_name').addEventListener("focusout", function() {
+	document.getElementById('user_name').style.backgroundColor = '#75D0DF';
+	document.getElementById('user_name').style.outlineColor = '#FF0CA9';
+})
+}
+    </script>
   </body>
 </html>
